@@ -1,12 +1,15 @@
 package com.app.service;
 
-import com.app.model.dto.UserAuthenticated;
-import org.springframework.stereotype.Service;
+import java.util.List;
+import java.util.Optional;
+import com.app.model.entity.LoginModel;
 
-@Service
-public class LoginService {
+public interface LoginService {
 
-    public UserAuthenticated makeLogin(String email, String password) {
-        return new UserAuthenticated(email, "token");
-    }
+    List<LoginModel>  obterTodosLogins();
+
+    void criarLogin(LoginModel login);
+
+    LoginModel obterPorId(Long id);
+
 }
