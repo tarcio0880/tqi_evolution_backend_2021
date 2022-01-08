@@ -25,11 +25,6 @@ public class LoginController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<LoginModel> obterPorId() {
-        return obterPorId();
-    }
-
-    @GetMapping("/{id}")
     public ResponseEntity<LoginModel> obterPorId(@PathVariable Long id) {
         return ResponseEntity.ok(loginService.obterPorId(id));
     }

@@ -1,9 +1,9 @@
 package com.app.service.impl;
 
 import java.util.List;
-import java.util.Optional;
+
 import com.app.model.entity.LoginModel;
-import com.app.model.repository.LoginRepository;
+import com.app.repository.LoginRepository;
 import com.app.service.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -2,7 +2,7 @@ package com.app.service.impl;
 
 import com.app.model.entity.SolicitacaoModel;
 import com.app.exception.GenericException;
-import com.app.model.repository.SolicitacaoRepository;
+import com.app.repository.SolicitacaoRepository;
 import com.app.service.SolicitacaoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

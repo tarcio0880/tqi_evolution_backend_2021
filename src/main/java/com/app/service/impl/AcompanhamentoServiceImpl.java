@@ -1,7 +1,7 @@
 package com.app.service.impl;
 
 import com.app.model.entity.AcompanhamentoModel;
-import com.app.model.repository.AcompanhamentoRepository;
+import com.app.repository.AcompanhamentoRepository;
 import com.app.service.AcompanhamentoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

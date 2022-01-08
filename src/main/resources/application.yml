@@ -1,2 +1,14 @@
 server:
   port: 8000
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/tqi_evolution
+    username: postgres
+    password: admin
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    properties:
+      hibernate:
+        default_schema: tqi_evolution
+        dialect: org.hibernate.dialect.PostgreSQLDialect

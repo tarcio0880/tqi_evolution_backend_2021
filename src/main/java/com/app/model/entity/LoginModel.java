@@ -7,7 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "login")
+@Table(name = "login"/*, schema = "tqi_evolution"*/)
 public class LoginModel {
 
     @Id

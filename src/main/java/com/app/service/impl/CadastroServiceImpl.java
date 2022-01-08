@@ -1,7 +1,7 @@
 package com.app.service.impl;
 
 import com.app.model.entity.CadastroModel;
-import com.app.model.repository.CadastroRepository;
+import com.app.repository.CadastroRepository;
 import com.app  .service.CadastroService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,4 +1,4 @@
-package com.app.model.repository;
+package com.app.repository;
 
 import java.util.List;
 import com.app.model.entity.SolicitacaoModel;
