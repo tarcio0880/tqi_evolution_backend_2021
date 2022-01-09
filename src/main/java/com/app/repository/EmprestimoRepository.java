@@ -7,10 +7,10 @@ import org.springframework.data.domain.ExampleMatcher;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import static org.springframework.data.domain.ExampleMatcher.GenericPropertyMatchers.ignoreCase;
 
-public interface CadastroRepository extends JpaRepository<CadastroModel, Long> {
-
+public interface EmprestimoRepository extends JpaRepository<EmprestimoModel, Long> {
 
 }

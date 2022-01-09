@@ -37,7 +37,7 @@ public class SwaggerConfig {
                 "API Rest para emprestimo financeiro",
                 "1.0",
                 "Terms of service",
-                new Contact("Tarcio Rodrigues", "https://www.linkedin.com/in/tarcio-rodrigues-8187aa227/", "rodriguestarcio.adv@gmail.com"),
+                new Contact("Tarcio Rodrigues", "https://www.linkedin.com/in/tarcio-rodrigues-8187aa227/", "tarciorodrigues0880@gmail.com"),
                 "Apache License Version 2.0",
                 "https://www.apache.org/licenses/LICENSE-2.0", Collections.EMPTY_LIST);
         return apiInfo;

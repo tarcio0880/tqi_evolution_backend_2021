@@ -32,10 +32,10 @@ public class AcompanhamentoController {
         this.acompanhamentoService = acompanhamentoService;
     }
 
-    @PostMapping
+    /*@PostMapping
     public ResponseEntity<Void> criarAcompanhamento(@RequestBody AcompanhamentoModel acompanhamento) {
         acompanhamentoService.criarAcompanhamento(acompanhamento);
         return ResponseEntity.noContent().build();
-    }
+    }*/
 
 }

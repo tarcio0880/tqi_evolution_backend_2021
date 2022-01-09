@@ -12,6 +12,11 @@ public class AcompanhamentoModel {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Long id;
+    /*private String codigoEmprestimo;
+    private String valor;
+    private String quantidadeParcelas;
+    private String quantidadeParcelas;
+    private String dataPrimeiraParcela;*/
     private String listaEmprestimo;
     private String detalhesEmprestimo;
     private String codigoEmprestimo;

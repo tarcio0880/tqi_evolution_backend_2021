@@ -14,7 +14,7 @@ public class CadastroModel {
     private String cpf;
     private String rg;
     private String endereco;
-    private String renda;
+    private Double renda;
     private String senha;
 
     public Long getId() {
@@ -65,11 +65,11 @@ public class CadastroModel {
         this.endereco = endereco;
     }
 
-    public String getRenda() {
+    public Double getRenda() {
         return renda;
     }
 
-    public void setRenda(String renda) {
+    public void setRenda(Double renda) {
         this.renda = renda;
     }
 
