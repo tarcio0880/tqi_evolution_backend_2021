@@ -1,4 +1,4 @@
-package com.app.config;
+package com.app.config.swagger;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -8,6 +8,7 @@ import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.service.ApiInfo;
 import springfox.documentation.service.Contact;
+import springfox.documentation.service.Tag;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
@@ -26,7 +27,12 @@ public class SwaggerConfig {
                 .apis(RequestHandlerSelectors.basePackage("com.app.controller"))
                 .paths(PathSelectors.any())
                 .build()
-                .apiInfo(metaData());
+                .apiInfo(metaData())
+                .tags(new Tag("Login", "", 1),
+                        new Tag("Cadastro de cliente", "", 2),
+                        new Tag("Solicitação de Empréstimo", "", 3),
+                        new Tag("Acompanhamento das solicitações de empréstimo", "", 4),
+                        new Tag("Tarefas adicionais", "", 5));
 
     }
 

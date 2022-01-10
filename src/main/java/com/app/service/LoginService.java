@@ -2,16 +2,15 @@ package com.app.service;
 
 import java.util.List;
 
-import com.app.model.entity.LoginModel;
+import com.app.model.dto.AutenticacaoDTO;
+import com.app.model.dto.UsuarioAutenticado;
 
 public interface LoginService {
 
-    List<LoginModel>  obterTodosLogins();
+    List<AutenticacaoDTO>  obterTodosLogins();
 
-    void criarLogin(LoginModel login);
-    void updateLogin(LoginModel login);
-    //void autenticaUsuario(LoginModel login);
-    LoginModel obterPorId(Long id);
-    void delPorId(Long id);
+    void updateLogin(AutenticacaoDTO login);
+
+    UsuarioAutenticado autenticaUsuario(AutenticacaoDTO login);
 
 }

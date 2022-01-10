@@ -2,13 +2,13 @@ package com.app.model.dto;
 
 import java.io.Serializable;
 
-public class UserAuthenticated implements Serializable {
+public class UsuarioAutenticado implements Serializable {
 
     private String email;
 
     private String token;
 
-    public UserAuthenticated(String email, String token) {
+    public UsuarioAutenticado(String email, String token) {
         this.email = email;
         this.token = token;
     }

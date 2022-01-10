@@ -1,10 +1,10 @@
 package com.app.service.impl;
 
-import com.app.model.entity.CadastroModel;
+import com.app.model.entity.UsuarioModel;
 import com.app.model.entity.EmprestimoModel;
-import com.app.repository.CadastroRepository;
+import com.app.repository.UsuarioRepository;
 import com.app.repository.EmprestimoRepository;
-import com.app.service.CadastroService;
+import com.app.service.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.ExampleMatcher;
@@ -15,36 +15,36 @@ import java.util.List;
 import static org.springframework.data.domain.ExampleMatcher.GenericPropertyMatchers.ignoreCase;
 
 @Service
-public class CadastroServiceImpl implements CadastroService {
+public class UsuarioServiceImpl implements UsuarioService {
 
     @Autowired
-    private CadastroRepository cadastroRepository;
+    private UsuarioRepository usuarioRepository;
 
     @Autowired
     private EmprestimoRepository emprestimoRepository;
 
     @Override
-    public List<CadastroModel> obterTodosCadastros() {
-        return cadastroRepository.findAll();
+    public List<UsuarioModel> obterTodosCadastros() {
+        return usuarioRepository.findAll();
     }
 
     @Override
-    public void criarCadastro(CadastroModel cadastro) {
-        cadastroRepository.save(cadastro);
+    public void criarCadastro(UsuarioModel cadastro) {
+        usuarioRepository.save(cadastro);
     }
 
     @Override
-    public void updateCadastro(CadastroModel cadastro) {
-        CadastroModel user = cadastroRepository.findById(cadastro.getId()).get();
+    public void updateCadastro(UsuarioModel cadastro) {
+        UsuarioModel user = usuarioRepository.findById(cadastro.getId()).get();
         user.setEmail(cadastro.getEmail());
         user.setSenha(cadastro.getSenha());
-        cadastroRepository.save(user);
+        usuarioRepository.save(user);
     }
 
     @Override
-    public CadastroModel obterPorId(Long id) {
+    public UsuarioModel obterPorId(Long id) {
 
-        return cadastroRepository.findById(id).get();
+        return usuarioRepository.findById(id).get();
     }
 
         public List<EmprestimoModel> obterPorIdCliente(Long id) {
@@ -64,6 +64,6 @@ public class CadastroServiceImpl implements CadastroService {
     }
     @Override
     public void delPorId(Long id) {
-        cadastroRepository.deleteById(id);
+        usuarioRepository.deleteById(id);
     }
 }
