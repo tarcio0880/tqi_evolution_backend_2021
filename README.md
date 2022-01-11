@@ -25,8 +25,8 @@ Restrições
 
 
 ## Ferramentas Utilizadas
-Spring boot versao 2.5.2
-Spring data versao 2.5.2
-Hibernate
-Swagger 
-Banco postgresql
+. Spring boot versao 2.5.2
+. Spring data versao 2.5.2
+. Hibernate
+. Swagger 
+. Banco postgresql
