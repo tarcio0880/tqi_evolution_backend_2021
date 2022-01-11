@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/cadastro")
+@RequestMapping("/usuario")
 @ApiOperation(value = "Cadastro Controller", tags = "Controller cadastro")
 public class UsuarioController {
 
