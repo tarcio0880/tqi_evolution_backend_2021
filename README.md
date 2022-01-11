@@ -22,3 +22,11 @@ Restrições
 1. A implementação deve utilizar linguagem Java ou Kotlin.
 2. Use todos os seus conhecimentos adquiridos no bootcamp para explorar bem a solução. Não se preocupe, porque não existe certo ou errado. Só queremos conhecer um pouco mais sobre você.
 3. Utilize o GitHub para repositório de código.
+
+
+## Ferramentas Utilizadas
+Spring boot versao 2.5.2
+Spring data versao 2.5.2
+Hibernate
+Swagger 
+Banco postgresql
